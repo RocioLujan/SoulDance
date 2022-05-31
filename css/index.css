@@ -3,7 +3,7 @@ margin: 0;
  }
 
 .fondobody{
-    background-color: rgb(247, 221, 237);
+    background: linear-gradient(to right, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 97%, rgba(253,137,215,1) 100%);
 }
 .sinpunto {
     list-style: none;
@@ -88,7 +88,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #8D468A;
+    background: linear-gradient(to right, #aa076b, #61045f);
 
 }
 
@@ -112,10 +112,14 @@ li{
 }
 
 nav ul li a{
+    font-size: var(--text-base);
     color: white;
+    padding: .5rem 1rem;
+    transition: all .3s ease-in-out;
 }
 nav ul li a:hover{
     color: black;
+    border: 2px solid white;
 }
 
 /* <!--SE APLICA GRID-->
@@ -226,26 +230,46 @@ section#g4 {
 
 /*INSTITUTO*/ 
 .container-historia{ 
-    width: 100%;
     display: flex;
-    
-    max-width: 100%;
-    width: 100%;
+    justify-content: space-around;
 }
 
 .card1{
     border: #8D468A solid 2px;
+    transition: all .3s linear;
+    padding: 3rem;
+    width: 33%;
 
 }
 
+.card1:hover {
+    transform: scale(1.1, 1.0);
+    box-shadow: 0px 0px 10px #000;
+}
+     
+
 .card2{
     border: #8D468A solid 2px;
-    
+    transition: all .3s linear;
+    padding: 3rem;
+    width: 33%;
+}
+
+.card2:hover{
+    transform: scale(1.1, 1.0);
+    box-shadow: 0px 0px 10px #000;
 }
 
 .card3{
     border: #8D468A solid 2px;
-   
+    transition: all .3s linear;
+    padding: 3rem;
+    width: 33%;
+}
+
+.card3:hover{
+    transform: scale(1.1, 1.0);
+    box-shadow: 0px 0px 10px #000;
 }
 
 .container-prof {
@@ -264,6 +288,7 @@ section#g4 {
     justify-items: center; 
     width: 50%; 
   }
+
 
 
 /*MEDIAQUERYS*/
@@ -303,5 +328,6 @@ footer{
     justify-content:space-around;
     align-items: center;
     background-color: #8D468A;
-
+    width: 100%;
+    background: linear-gradient(to right, #aa076b, #61045f);
 }
