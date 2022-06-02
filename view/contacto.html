@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
     <title>Soul Dance | Instituto de Danzas</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body class="fondobody">
       <!-- Logo + Nombre + nav -->
@@ -35,68 +37,43 @@
     </header>
     <!-- cierre de mi HEADER -->
 	<!-- comienza información de mi sitio -->
-    <section>
-        <div>
-            <h2 class="titulos">Contacto</h1>
-        </div>
-    </section>
 
-    <section>
-        <div>
-            <ul class="titulos">
-                <li>DIRECCION</li>
-                <li>Int. Carlos Ratti 490 </li>
-                <li>TELÉFONO:</li>
-                <li>(+54) 9 11.4042-8508 </li>
-                <li>E-MAIL:  </li>
-                <li>institutosouldance@gmail.com </li>
-                <li>INSTAGRAM:   </li>
-                <li>instagram.com/institutosouldance</li>
-                <li>FACEBOOK:</li>
-                <li>facebook.com/institutosouldance</li>
-            </ul>
-        </div>
-    </section>
 <!-- formulario de contacto -->
-<section>
-    <article>
-        <form action="#">
-            <input type="text" placeholder="NOMBRE Y APELLIDO"><br>
-            <label for="email">Correo:
-                <input type="E-mail" placeholder="ej: minombre@gmail.com" name="email"><br>
-            </label>
-            <label for="Tipo de Clase">Tipo de clase:
-                <select name="Tipo de clase" id="clases">
-                    <option value="Clasico babys">Clasico Babys</option>
-                    <option value="Clasico avanz">Clasico Avanz</option>
-                    <option value="Clasico Juv 1">Clasico Juv 1</option>
-                    <option value="Clasico Juv 2">Clasico Juv 2</option>
-                    <option value="Clasico babys">Jazz babys</option>
-                    <option value="Clasico Infantil">Jazz Infantil</option>
-                    <option value="Clasico Juv 1 ">Jazz Juv 1</option>
-                    <option value="Clasico Ritmons Urbanos">Ritmos Urbanos</option>
-                    <option value="Clasico Zumba">Zumba</option>
-                </select><br>
-            </label>
-            <label for="EDAD">Edad:
-                <input type="Tipo de clase" placeholder="" name=""><br>
-            </label>
-            <label for="Mensaje"> Mensaje:<br>
-                <textarea placeholder="Observaciones"></textarea>
-            </label> <br>
-            <div>Queres recibir info sobre nosotros?
-            <input type="checkbox" name="acepta" value="1"></div>
-            <input type="submit" value="Enviarme novedades">
-            <input type="reset" value="Borrar">
-        </form>
-    </article>
+<section class="container">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">CONTACTO</h6>
+          <p class="card-text">DIRECCION
+      Int. Carlos Ratti 490
+      TELÉFONO:
+      (+54) 9 11.4042-8508
+      E-MAIL:
+      institutosouldance@gmail.com
+      INSTAGRAM:
+      instagram.com/institutosouldance
+      FACEBOOK:
+      facebook.com/institutosouldance</p>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <label for="exampleFormControlInput1" class="form-label">Tipo de Clase </label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Elegir">
+      <label for="exampleFormControlInput1" class="form-label">Mensaje</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Observaciones">
+      <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+          
+          
+        </div>
+      </div>
 </section>
 <!-- inicio de footer --> 
-<footer class="fondofooter">
+    <footer class="fondofooter">
     <img class="logo" src="../img/logo.svg" alt="">
     <h3>CONTACTO WP (TELÉFONO)</h3>
     <h3>LINK REDES (IG)(FB)(YT)</h3>
     <p>Diseño y Programación. Todos los Derechos Reservados</p>
-</footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 <body style="background-color:#F5D9ED;"></body>
 </html>

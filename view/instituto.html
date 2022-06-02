@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
     <title>Soul Dance | Instituto de Danzas</title>
     <link rel="stylesheet" href="../css/index.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body class="fondobody">
     <!-- Logo + Nombre + nav -->
@@ -52,47 +54,89 @@
     </section> 
 
 
-    <h2 class="titulos">Breve Historia</h2>    
+    <h2 class="titulos"><strong>BREVE HISTORIA</strong></h2>    
 
     <section class="container-historia"> 
 
-        <div class="card1"> 	
-           <h3>Nuestro Desafio</h3>   
-            <p class="textogral">
-                Queremos acercar el arte a familias y escuelas entendiendo q la formación de los futuros ciudadanos exige mucho más que la incorporación de conocimientos formales. 
-            </p>
-        </div>
-
-        <div class="card2"> 
-            <h3>Nuestra Mision</h3>   
-            <p class="textogral">
-                Priorizamos nuestro accionar docente de manera responsable y comprometida desde el valor de la confianza que favorecerán relaciones con el alumno en la institución; las amplias instalaciones albergan grupos limitados para su mejor desarrolló teniendo al frente maestros y asistentes supervisado por la directora general Lilian Giovine.
-            </p>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+              <div class="col-md-4">
+                <h2><ins>DESAFIO</ins></h2>
+                <p><em>Queremos acercar el arte a familias y escuelas entendiendo q la formación de los futuros ciudadanos exige mucho más que la incorporación de conocimientos formales. </em></p>
+                </p>
+              </div>
+              <div class="col-md-4">
+                <h2><ins>NUESTRA MISION</ins></h2>
+                <p><em> Priorizamos nuestro accionar docente de manera responsable y comprometida desde el valor de la confianza que favorecerán relaciones con el alumno en la institución; las amplias instalaciones albergan grupos limitados para su mejor desarrolló teniendo al frente maestros y asistentes supervisado por la directora general Lilian Giovine.</em> </p>
+                </p>
+             </div>
+              <div class="col-md-4">
+                <h2><ins>NUESTRO OBJETIVO</ins></h2>
+                <p><em>Priorizamos nuestro accionar docente de manera responsable y comprometida desde el valor de la confianza que favorecerán relaciones con el alumno en la institución; las amplias instalaciones albergan grupos limitados para su mejor desarrolló teniendo al frente maestros y asistentes supervisado por la directora general Lilian Giovine.</em></p>
+                </p>
+              </div>
             </div>
-        <div class="card3"> 
-            <h3>Nuestro Objetivo</h3>   
-            <p class="textogral">
-                Lograr excelencia en el aprendizaje para un futuro en que los estudiantes lleguen a cumplir sus metas: artistas profesionales, maestros y coreógrafos.
-            </p>
-        </div>
     </section>
-    <section>
-        <div class="container-prof">
-            <h4 class="titulos">Nuestros profesionales</h4>
-            <section class="prof"><img class="imagen-prof"src="../img/profesional.jpeg" alt=""></section>
-            <section class="prof1"><img class="imagen-prof1"src="../img/profesional1.jpeg" alt=""></section>
-            <section class="prof2"><img class="imagen-prof2"src="../img/profesional2.jpeg" alt=""></section>
-            <section class="prof3"><img class="imagen-prof3" src="../img/profesional3.jpeg" alt=""></section>
-        </div>
-    </section>
-
+    <section class="container">
+        <section class="row">
+            <h4 class="titulos">NUESTROS PROFESIONALES</h4>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/profesional.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Leon Suarez</h5>
+                  <p>Danza Urbana.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/profesional1.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Emma Figueroa</h5>
+                  <p>Contemporaneo/p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/profesional2.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Carla Dominguez</h5>
+                  <p>Clasico</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/profesional3.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sofia Mendez</h5>
+                  <p>Jazz</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+    </Section>
     <!-- inicio de footer --> 
-<footer class="fondofooter">
+    <footer class="fondofooter">
         <img class="logo" src="../img/logo.svg" alt="">
         <h3>CONTACTO WP (TELÉFONO)</h3>
         <h3>LINK REDES (IG)(FB)(YT)</h3>
         <p>Diseño y Programación. Todos los Derechos Reservados</p>
-</footer>
-<body style="background-color:#F5D9ED;"></body>
+    </footer>
+    <body style="background-color:#F5D9ED;"></body>
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
