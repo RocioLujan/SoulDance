@@ -39,10 +39,17 @@ h2{
 
 .textogral {
     font-style: italic;
+    padding: 2rem;
 }
 
 /*INDEX*/
 
+
+.container-section {
+    display:flex;
+    margin-top: 2rem;
+
+}
 .container-section-qs{
     display: flex;
     flex-wrap: wrap;
@@ -69,14 +76,27 @@ h2{
     justify-content: space-around;
 }
 
+
 .container-section-directora{
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.container-section-info-directora {
+
+.section-container--directora {
     width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.container-section-info{
+    flex: 1 1 50%;
+    justify-content: center ;
+    text-align: right;
+}
+.container-section-img{
+    flex: 1 1 50%;
 }
 
 /* <!--SE APLICA FLEX-->
