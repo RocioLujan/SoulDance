@@ -1,0 +1,93 @@
+/* ESTILO HEADER */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  background-color: #7b1f7a; }
+  .header-container .figure__logo {
+    height: 100px;
+    width: 100%;
+    padding-left: var(--xlarge); }
+  .header-container .nav {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: right; }
+    .header-container .nav .nav__ul {
+      padding: var(--medium); }
+    .header-container .nav .nav__li {
+      display: inline-block;
+      padding: var(--medium);
+      font-size: var(--text_font-size);
+      font-weight: 700;
+      font-family: var(--secondary_font); }
+    .header-container .nav .nav__li a {
+      text-decoration: none;
+      color: --secondary_color; }
+      .header-container .nav .nav__li a:hover > a {
+        color: var(--text_color);
+        border-bottom: 2px solid var(--secondary_color); }
+
+/* EL HOOVER ES HIJO DE NAV LI A */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8D468A;
+  width: 100%;
+  background: linear-gradient(to right, #aa076b, #61045f); }
+
+.section-container--info {
+  display: flex;
+  gap: var(--xlarge);
+  padding: var(--xlarge);
+  border-bottom: 1px solid #7b1f7a; }
+  .section-container--info .section__info {
+    flex: 1 1 50%; }
+    .section-container--info .section__info .info__h2 {
+      text-align: center;
+      font-size: var(--title_font-size);
+      padding: var(--xsmall);
+      font-family: var(--main_font); }
+    .section-container--info .section__info .info__p {
+      text-align: justify;
+      font-size: var(--text_font-size);
+      font-family: var(--main_font); }
+  .section-container--info .section__figure-info {
+    flex: 1 1 50%;
+    text-align: right; }
+    .section-container--info .section__figure-info .info-figure__img {
+      width: 80%;
+      height: 400px; }
+
+.section__place {
+  flex: 1 1 50%; }
+  .section__place .place__h2 {
+    text-align: center;
+    font-size: var(--title_font-size);
+    padding: var(--xsmall);
+    font-family: var(--main_font); }
+  .section__place .place__p {
+    text-align: justify;
+    font-size: var(--text_font-size);
+    font-family: var(--main_font); }
+
+.boostrap-style {
+  padding: var(--xlarge); }
+
+/* ESTILO MAP */
+.section-container--map {
+  width: 100%;
+  margin: var(--xlarge) 0;
+  padding: var(--xlarge); }
+
+.map__title {
+  font-size: var(--title_font-size);
+  font-family: var(--main_font);
+  text-align: center; }
+
+.map__text {
+  font-size: var(--text_font-size);
+  font-family: var(--main_font); }

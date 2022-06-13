@@ -6,125 +6,106 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
     <title>Soul Dance | Instituto de Danzas</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilosCss.css">
     <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Zilla+Slab&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body class="fondobody">
-    <!-- Logo + Nombre + nav -->
-    <header>
-        <img class="logo" src="./img/logo.svg" alt="">
-        <!-- <h1>Soul Dance | Instituto de Danzas</h1
-            aten> 
-        ATENCION! LINKEAR EL LOGO A MI PAG -->
-       <nav>
-           <ul>
-               <li class="sinpunto">
-                   <a href="./index.html">HOME</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./view/instituto.html">INSTITUTO</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./view/clases.html">CLASES</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./view/imagenes.html">IMAGENES</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./view/contacto.html">CONTACTO</a>
-               </li>
+<body>
+    <!-- HEADER -NAV -->
+    <header class="header-container">
+        <figure class="header__figure">
+            <img class="figure__logo" src="./img/logo.svg" alt="logo">
+        </figure>
+        <!-- <h1>Soul Dance | Instituto de Danzas</h1 ATENCION! LINKEAR EL LOGO A MI PAG -->
+       <nav class="nav">
+           <ul class="nav__ul">
+               <li class="nav__li"><a href="./index.html">HOME</a></li>
+               <li class="nav__li"><a href="./view/instituto.html">INSTITUTO</a></li>
+               <li class="nav__li"><a href="./view/clases.html">CLASES</a></li>
+               <li class="nav__li"><a href="./view/imagenes.html">IMAGENES</a></li>
+               <li class="nav__li"><a href="./view/contacto.html">CONTACTO</a></li>
            </ul>
        </nav>
     </header>
     <!-- cierre de mi menu -->
-    <!-- comienza información de mi sitio -->
-    <section class="container-section">
-        <div class="container-section-info-qs">
-			<h2 class="titulo-qs">¿QUIÉNES SOMOS? </h2>    
-            <p class="textogral">El Instituto de Arte y Ballet combina un ambiente profesional con un agradable 
-                ambiente familiar; ideal para la formación integral del bailarin.
-                Sus maestros son evaluados constantemente para dar la mejor calidad técnica y 
-                artistica a sus alumnos.
-                Aprendé todas las posibilidades de moverte y expresar sentimientos con tu cuerpo, 
-                descubrí una nueva forma de vivir.
-                Te invitamos a que te acerques a conocernos y poder darte una calida.
-                Bienvenida a la libertad que solo la danza puede brindarte.</p>
-        </div>
-            <img class="imagen1-index" src="./img/Quienes somos.jpeg" alt="Imagen">
-    </section> 
-    <section>
-		<div class="container-section-ins">
-			<div class="container-section-info--ins">
-            <h2 class="titulo-ins">INSTALACIONES</h2>    
-            <p class="textogral">Están conformadas por seis salas para el dictado de clases, cómodos vestuarios con 
-               armarios independientes, baños con duchas y sala de espera.
-               Las salas de danza están expresamente diseñadas para asegurar a los estudiantes 
-               óptimas condiciones de uso. Están espejadas y poseen pisos
-               de madera suspendidos, para otorgarles flexibilidad.
-               Además del dictado de clases con equipos de sonido de alta calidad, se utiliza
-               acompañamiento de piano para determinadas materias.</p>
+    <!-- MAIN INFO  AND MAP -->
+    <main>
+        <section class="section-container--info">
+            <div class="section__info">
+                <h2 class="info__h2">¿QUIÉNES SOMOS? </h2>    
+                <p class="info__p">El Instituto de Arte y Ballet combina un ambiente profesional con un agradable 
+                    ambiente familiar; ideal para la formación integral del bailarin.
+                    Sus maestros son evaluados constantemente para dar la mejor calidad técnica y 
+                    artistica a sus alumnos.
+                    Aprendé todas las posibilidades de moverte y expresar sentimientos con tu cuerpo, 
+                    descubrí una nueva forma de vivir.
+                    Te invitamos a que te acerques a conocernos y poder darte una calida.
+                    Bienvenida a la libertad que solo la danza puede brindarte.</p>
             </div>
-            <img class="imagen2-index" src="./img/instalaciones.jpeg" alt="Imagen">      
+            <figure class="section__figure-info">
+                <img class="info-figure__img" src="./img/Quienes somos.jpeg" alt="profesora-laura">
+            </figure>
+        </section> 
+        <section class="section-container--place">
+            <figure class="section__figure-place">
+                <img class="place-figure__img" src="./img/instalaciones.jpeg" alt="aula-primer-piso">      
+            </figure>
+            <div class="section__place">
+                <h2 class="place__h2">INSTALACIONES</h2>    
+                <p class="place__p">Están conformadas por seis salas para el dictado de clases, cómodos vestuarios con 
+                armarios independientes, baños con duchas y sala de espera.
+                Las salas de danza están expresamente diseñadas para asegurar a los estudiantes 
+                óptimas condiciones de uso. Están espejadas y poseen pisos
+                de madera suspendidos, para otorgarles flexibilidad.
+                Además del dictado de clases con equipos de sonido de alta calidad, se utiliza
+                acompañamiento de piano para determinadas materias.</p>
+            </div>
+        </section> 
+        <div class="boostrap-style row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Clasico</h5>
+                  <p class="card-text">El ballet, ​ danza académica, danza clásica o balé​​ es un tipo de danza y también el nombre de la técnica correspondiente. Según las épocas, los países o las corrientes y el espectáculo, esta expresión artística puede incluir: danza, mímica, y teatro, personas y maquinaria.
+                      La academia cuenta con 4 niveles, Clasico Babys, Clasico Avanzado, Clasico Juvenil 1 y Clasico Juvenil 2.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Jazz</h5>
+                  <p class="card-text">La danza jazz es una clasificación integrada por una amplia gama de estilos de baile. Antes de la década de 1950, se refiere a la danza originada a partir de estilos de danza africana vernácula de América. En la década de 1950 surgió un nuevo género de danza jazz, la danza moderna jazz, con raíces en la danza tradicional del Caribe.
+                      La academia cuenta con 4 niveles, Jazz Babys, Jazz Infantil, Jazz Contemporaneo y Jazz Juvenil.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Ritmos Urbanos</h5>
+                  <p class="card-text">El baile urbano o baile callejero (en inglés, urban dance o street dance) es un estilo de baile, independientemente del país de origen, el cual evolucionó fuera de los estudios de baile en cualquier espacio abierto disponible como calles, fiestas de baile, fiestas de barrio, parques, patios escolares, raves y clubes nocturnos. El término se utiliza para describir las danzas vernáculas en el contexto urbano.</p>
+                </div>
+              </div>
+            </div>
         </div>
-    </section> 
-    <section class="container-section-clases">
-		<article>
-			<h3 class="titulo-clases">CLASES</h3>   
-        </article>
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">CLASICO</th>
-                <th scope="col">JAZZ</th>
-                <th scope="col">OTROS</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Clasico Babys</td>
-                <td>Jazz Babys</td>
-                <td>Ritmos Urbanos</td>
-              </tr>
-              <tr>
-                <td>Clasico Avanz</td>
-                <td>Jazz Infantil</td>
-                <td>Zumba</td>
-              </tr>
-              <tr>
-                <td>Clasico Juv 1</td>
-                <td>Jazz Contemporaneo</td>
-              </tr>
-              <tr>
-                <td>Clasico Juv 2</td>
-                <td>Jazz Juv 1</td>
-              </tr>
-            </tbody>
-          </table>
-        <img class="imagen3-index" src="./img/clases.jpeg" alt="Imagen">   
-    <section>
-
-    <section>
-        <div>
-			<h3 class="titulos">UBICACIÓN</h3>
-            <p class="textogral">Nos encontramos ubicados en Zona Oeste, Ituzaingo a 6 cuadras de la estacion Sarmiento, en la calle Int. Carlos Ratti 490 entre Alvear y Lavalle. 
-
-                MEDIOS DE TRANSPORTE:
-                
-                395 - MORON
-                395 - ITUZAINGÓ
-                395 - SANTA CECILIA
-            </p> 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.889371894191!2d-58.6752973!3d-34.657496699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf63ef4dfa67%3A0xc68f4439ee61ad91!2sAv.%20Int.%20Carlos%20Ratti%20490%2C%20Ituzaing%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1652282153557!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
-    </section> 
-    </section>
-      
-<!-- inicio de footer --> 
-    <footer class="fondofooter">
-        <img class="logo" src="./img/logo.svg" alt="">
-        <h3>CONTACTO WP (TELÉFONO)</h3>
-        <h3>LINK REDES (IG)(FB)(YT)</h3>
-        <p>Diseño y Programación. Todos los Derechos Reservados</p>
+        <section class="section-container--map">
+                <h3 class="map__title">UBICACIÓN</h3>
+                <p class="map__text">Nos encontramos ubicados en Zona Oeste, Ituzaingo a 6 cuadras de la estacion Sarmiento, en la calle Int. Carlos Ratti 490 entre Alvear y Lavalle.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.889371894191!2d-58.6752973!3d-34.657496699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf63ef4dfa67%3A0xc68f4439ee61ad91!2sAv.%20Int.%20Carlos%20Ratti%20490%2C%20Ituzaing%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1652282153557!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+        </section>
+    </main> 
+<!-- FOOTER --> 
+    <footer class="footer-container">
+        <ul class="footer__ul">
+            <li class="footer__li"><span>CONTACTO WP (TELÉFONO)</span></li>
+            <li class="footer__li"><span>LINK REDES (IG)(FB)(YT)</span></li>
+            <li class="footer__li"><span>Diseño y Programación. Todos los Derechos Reservados</span></li>
+        </ul>
     </footer>
 <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

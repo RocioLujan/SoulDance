@@ -1,0 +1,40 @@
+/* ESTILO HEADER */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #7b1f7a;
+    .figure__logo {
+        height: 100px;
+        width: 100%;
+        padding-left: var(--xlarge);}
+    .nav {
+            width: 50%;
+            height: 100%;
+            align-items: center;
+            justify-content: right;
+        .nav__ul {
+                padding: var(--medium); }
+            .nav__li {
+                    display: inline-block;
+                    padding: var(--medium);
+                    font-size: var(--text_font-size);
+                    font-weight: 700;
+                    font-family: var(--secondary_font); }
+            .nav__li a {
+                    text-decoration: none;
+                    color: --secondary_color; 
+                    &:hover > a {
+                        color: var(--text_color);
+                        border-bottom: 2px solid var(--secondary_color);} }
+          }
+}
+
+/* EL HOOVER ES HIJO DE NAV LI A */
+
+
+
+
+
+
