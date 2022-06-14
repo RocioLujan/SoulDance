@@ -1,5 +1,5 @@
 /* NORMALIZE */
-* {
+/*  {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
@@ -8,7 +8,7 @@ html {
   font-size: 68%; }
 
 body {
-  background: linear-gradient(to top, #fcecfc 0%, #fba6e1 97%, #fd89d7 100%); }
+  background: linear-gradient(to top, #fcecfc 0%, #fba6e1 97%, #fd89d7 100%); } */
 
 .sinpunto {
   list-style: none;
@@ -55,7 +55,7 @@ h2 {
   --xlarge: 2.6rem; }
 
 /* ESTILO HEADER */
-.header-container {
+/* .header-container {
   display: flex;
   justify-content: space-between;
   height: 100px;
@@ -88,10 +88,10 @@ h2 {
 
 .nav__li:hover > a {
   color: var(--text_color);
-  border-bottom: 2px solid var(--secondary_color); }
+  border-bottom: 2px solid var(--secondary_color); } */
 
 /*INDEX*/
-.section-container--info {
+/* .section-container--info {
   display: flex;
   gap: var(--xlarge);
   padding: var(--xlarge);
@@ -117,10 +117,10 @@ h2 {
 
 .info-figure__img {
   width: 80%;
-  height: 400px; }
+  height: 400px; } */
 
 /* ESTILO PLACE */
-.section-container--place {
+/* .section-container--place {
   display: flex;
   gap: var(--xlarge);
   padding: var(--large); }
@@ -144,14 +144,14 @@ h2 {
 .place__p {
   text-align: justify;
   font-size: var(--text_font-size);
-  font-family: var(--main_font); }
+  font-family: var(--main_font); } */
 
 /* ESTILO CARDS */
-.boostrap-style {
-  padding: var(--xlarge); }
+/* .boostrap-style {
+  padding: var(--xlarge); } */
 
 /* ESTILO MAP */
-.section-container--map {
+/* .section-container--map {
   width: 100%;
   margin: var(--xlarge) 0;
   padding: var(--xlarge); }
@@ -163,7 +163,7 @@ h2 {
 
 .map__text {
   font-size: var(--text_font-size);
-  font-family: var(--main_font); }
+  font-family: var(--main_font); } */
 
 /*INSTITUTO*/
 .container-historia {
