@@ -4,92 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo" type="image/x-icon">
     <title>Soul Dance | Instituto de Danzas</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilosCss.css">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Joan&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body class="fondobody">
-    <!-- Logo + Nombre + nav -->
-    <header>
-        <img class="logo" src="../img/logo.svg" alt="">
-        <!-- <h1>Soul Dance | Instituto de Danzas</h1> -->
-       <nav>
-           <ul>
-               <li class="sinpunto">
-                   <a href="../index.html">HOME</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./instituto.html">INSTITUTO</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./clases.html">CLASES</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./imagenes.html">IMAGENES</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./contacto.html">CONTACTO</a>
-               </li>
+<body>
+  <!-- HEADER -NAV -->
+  <header class="header-container">
+        <figure class="header__figure">
+            <img class="figure__logo" src="./img/logo.png" alt="logo">
+        </figure>
+        <!-- <h1>Soul Dance | Instituto de Danzas</h1 ATENCION! LINKEAR EL LOGO A MI PAG -->
+       <nav class="nav">
+           <ul class="nav__ul">
+               <li class="nav__li"><a href="./index.html">HOME</a></li>
+               <li class="nav__li"><a href="./view/instituto.html">INSTITUTO</a></li>
+               <li class="nav__li"><a href="./view/clases.html">CLASES</a></li>
+               <li class="nav__li"><a href="./view/imagenes.html">IMAGENES</a></li>
+               <li class="nav__li"><a href="./view/contacto.html">CONTACTO</a></li>
            </ul>
        </nav>
     </header>
     <!-- cierre de mi menu -->
 	<!-- comienza información de mi sitio -->
-    <section class="section-container--directora">
-            <img src="../img/directora.jpeg" alt="imagen" class="container-section-img">
-            <div class="container-section-info">
-			      <h2 class="titulos">Instituto Soul Dance </h2>    
-            <p class="textogral">Fundado por la Directora del Ballet Concierto de Iñaki Urlezaga: La Maestra, Bailarina Solista y Docente Teatro Colón, Lilián Giovine.
+  <main>
+    <section class="section-container--coach">
+      <figure class="section__figure-coach">
+        <img src="../img/directora.jpeg" alt="coach" class="coach-figure__img">
+      </figure>
+      <div class="section__coach">
+			      <h2 class="coach__h2">Instituto Soul Dance</h2>    
+            <p class="coach__p">Fundado por la Directora del Ballet Concierto de Iñaki Urlezaga: La Maestra, Bailarina Solista y Docente Teatro Colón, Lilián Giovine.
                 En sus salas se formaron grandes artistas y pasaron por ellas figuras de la danza internacional siendo por muchos años la sede oficial del Ballet Concierto.
                 El Instituto de Arte y Ballet combina un ambiente profesional con un agradable ambiente familiar; ideal para la formación integral del bailarin.
                 Sus maestros son evaluados constantemente para dar la mejor calidad técnica y artistica a sus alumnos.
                 Aprendé todas las posibilidades de moverte y expresar sentimientos con tu cuerpo, descubrí una nueva forma de vivir.
                 Te invitamos a que te acerques a conocernos y poder darte una calida Bienvenida a la libertad que solo la danza puede brindarte.
     </section> 
-
-
-    <h2 class="titulos"><strong>BREVE HISTORIA</strong></h2>    
-
-    <section class="container-historia"> 
-
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-              <div class="col-md-4">
-                <h2><ins>DESAFIO</ins></h2>
-                <p><em>Queremos acercar el arte a familias y escuelas entendiendo q la formación de los futuros ciudadanos exige mucho más que la incorporación de conocimientos formales. </em></p>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <h2><ins>NUESTRA MISION</ins></h2>
-                <p><em> Priorizamos nuestro accionar docente de manera responsable y comprometida desde el valor de la confianza que favorecerán relaciones con el alumno en la institución; las amplias instalaciones albergan grupos limitados para su mejor desarrolló teniendo al frente maestros y asistentes supervisado por la directora general Lilian Giovine.</em> </p>
-                </p>
-             </div>
-              <div class="col-md-4">
-                <h2><ins>NUESTRO OBJETIVO</ins></h2>
-                <p><em>Priorizamos nuestro accionar docente de manera responsable y comprometida desde el valor de la confianza que favorecerán relaciones con el alumno en la institución; las amplias instalaciones albergan grupos limitados para su mejor desarrolló teniendo al frente maestros y asistentes supervisado por la directora general Lilian Giovine.</em></p>
-                </p>
-              </div>
+    <section class="section-container--hist"> 
+      <h1 class="hist__h1">Breve Historia</h1>
+      <div class="boostrap-style row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Desafio</h5>
+              <p class="card-text">Queremos acercar el arte a familias y escuelas entendiendo q la formación de los futuros ciudadanos exige mucho más que la incorporación de conocimientos formales.</p>
             </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Vision</h5>
+              <p class="card-text">Priorizamos nuestro accionar docente de manera responsable y comprometida desde el valor de la confianza que favorecerán relaciones con el alumno en la institución; las amplias instalaciones albergan grupos limitados para su mejor desarrolló teniendo al frente maestros y asistentes supervisado por la directora general Lilian Giovine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Objetivos</h5>
+              <p class="card-text">Priorizamos nuestro accionar docente de manera responsable y comprometida desde el valor de la confianza que favorecerán relaciones con el alumno en la institución; las amplias instalaciones albergan grupos limitados para su mejor desarrolló teniendo al frente maestros y asistentes supervisado por la directora general Lilian Giovine.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
 <!--  ACOMODAR TAMAÑO DE CARRUSEL -->
-
-    <section class="container">
+    <section class="carousel--container">
         <section class="row">
-            <h4 class="titulos">NUESTROS PROFESIONALES</h4>
+            <h2 class="carousel__h2">NUESTROS PROFESIONALES</h2>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../img/profesional.jpeg" class="d-block w-100 " alt="..."style= "height: 700px; width: 70%">
+                <img src="../img/profesional.jpeg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Leon Suarez</h5>
                   <p>Danza Urbana.</p>
@@ -128,15 +128,18 @@
           </div>
         </section>
     </Section>
+  </main>
     <!-- inicio de footer --> 
-    <footer class="fondofooter">
-        <img class="logo" src="../img/logo.svg" alt="">
-        <h3>CONTACTO WP (TELÉFONO)</h3>
-        <h3>LINK REDES (IG)(FB)(YT)</h3>
-        <p>Diseño y Programación. Todos los Derechos Reservados</p>
-    </footer>
-    <body style="background-color:#F5D9ED;"></body>
-<!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <footer class="footer-container">
+      <ul class="footer__ul">
+        <li class="footer__li"><span><i class="fa-brands fa-instagram"></i></span></li>
+        <li class="footer__li"><span><i class="fa-brands fa-facebook-f"></i></span></li>
+        <li class="footer__li"><span><i class="fa-brands fa-youtube"></i></span></li>
+        <li class="footer__li"><span>Diseño y Programación. Todos los Derechos Reservados</span></li>
+      </ul>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://kit.fontawesome.com/c539e2d60d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

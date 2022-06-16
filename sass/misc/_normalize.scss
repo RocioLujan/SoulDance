@@ -1,13 +1,12 @@
 * {
-  padding: 0;
+  padding: 0;large
   margin: 0;
   box-sizing: border-box; }
 
 html {
   font-size: 68%; }
 
-body {
-  background: linear-gradient(to top, #fcecfc 0%, #fba6e1 97%, #fd89d7 100%); }
-  
-
-  
+  body {
+    background: linear-gradient(to top, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 97%, rgba(253,137,215,1) 100%);
+    padding: 0 $large;
+  }

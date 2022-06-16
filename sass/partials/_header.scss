@@ -3,35 +3,41 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    height: 100px;
-    background-color: #7b1f7a;
+    height: 120px;
+    background-color:$main_color;
     .figure__logo {
         height: 100px;
         width: 100%;
-        padding-left: $xlarge;}
+        padding-left: $xlarge;
+    }
     .nav {
             width: 50%;
             height: 100%;
             align-items: center;
             justify-content: right;
+
         .nav__ul {
                 padding: $medium; }
+
             .nav__li {
                     display: inline-block;
                     padding: $medium;
                     font-size: $text_font-size;
                     font-weight: 700;
-                    font-family: $secondary_font; }
+                    font-family: $secondary_font;
+                    padding-bottom: $small;
+                    border-bottom: 2px solid transparent;
+                    transition: 1s all ease; }
             .nav__li a {
                     text-decoration: none;
                     color: $secondary_color; 
                     &:hover > a {
-                        color: $text_color;
+                        color: $secondary_color;
                         border-bottom: 2px solid $secondary_color;} }
           }
 }
 
-/* EL HOOVER ES HIJO DE NAV LI A */
+
 
 
 

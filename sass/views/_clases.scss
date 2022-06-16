@@ -1,0 +1,21 @@
+/* ESTILO CLASES */
+
+.card-group {
+    margin: $medium 0;
+    gap: $medium;
+  }
+.card-img-top {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    .list-group {
+        bottom: 0;
+        font-family: $secondary_font;
+        font-size: $text_font-size;
+        text-align: center;
+        .list-group-item {
+            background-color: transparent!important;
+          }
+          
+    }
+  }

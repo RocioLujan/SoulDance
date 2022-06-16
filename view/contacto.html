@@ -4,76 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo" type="image/x-icon">
     <title>Soul Dance | Instituto de Danzas</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilosCss.css">
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Joan&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body class="fondobody">
-      <!-- Logo + Nombre + nav -->
-      <header>
-        <img class="logo" src="../img/logo.svg" alt="">
-        <!-- <h1>Soul Dance | Instituto de Danzas</h1> -->
-       <nav>
-           <ul>
-               <li class="sinpunto">
-                   <a href="../index.html">HOME</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./instituto.html">INSTITUTO</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./clases.html">CLASES</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./imagenes.html">IMAGENES</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./contacto.html">CONTACTO</a>
-               </li>
-           </ul>
-       </nav>
+<body>
+    <!-- HEADER -NAV -->
+    <header class="header-container">
+    <figure class="header__figure">
+      <img class="figure__logo" src="./img/logo.png" alt="logo">
+    </figure>
+    <!-- <h1>Soul Dance | Instituto de Danzas</h1 ATENCION! LINKEAR EL LOGO A MI PAG -->
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li"><a href="../index.html">HOME</a></li>
+        <li class="nav__li"><a href="./instituto.html">INSTITUTO</a></li>
+        <li class="nav__li"><a href="./clases.html">CLASES</a></li>
+        <li class="nav__li"><a href="./imagenes.html">IMAGENES</a></li>
+        <li class="nav__li"><a href="./contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
     </header>
     <!-- cierre de mi HEADER -->
-	<!-- comienza información de mi sitio -->
-
-<!-- formulario de contacto -->
-<section class="container">
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted">CONTACTO</h6>
-          <p class="card-text">DIRECCION
-      Int. Carlos Ratti 490
-      TELÉFONO:
-      (+54) 9 11.4042-8508
-      E-MAIL:
-      institutosouldance@gmail.com
-      INSTAGRAM:
-      instagram.com/institutosouldance
-      FACEBOOK:
-      facebook.com/institutosouldance</p>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
-      <label for="exampleFormControlInput1" class="form-label">Email</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      <label for="exampleFormControlInput1" class="form-label">Tipo de Clase </label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Elegir">
-      <label for="exampleFormControlInput1" class="form-label">Mensaje</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Observaciones">
-      <button type="submit" class="btn btn-primary mb-3">Enviar</button>
-          
-          
-        </div>
+    <!-- formulario de contacto -->
+ <!-- cierre de mi HEADER -->
+    <!-- formulario de contacto -->
+  <main class="form--container">
+      <div class="form__info--container">
+          <h1 class="form__info--h1">Contacto</h1>
+          <ul class="form__info--ul">
+              <li class="form__info--li"><span><i class="fa-solid fa-location-dot"></i> Int. Carlos Ratti 490</span></li>
+              <li class="form__info--li"><span><i class="fa-brands fa-whatsapp"></i> (+54) 9 11.4042-8508</span></li>
+              <li class="form__info--li"><span><i class="fa-solid fa-envelope"></i> institutosouldance@gmail.com</span></li>
+              <li class="form__info--li"><span><i class="fa-brands fa-instagram"></i> instagram.com/institutosouldance</span></li>
+              <li class="form__info--li"><span><i class="fa-brands fa-facebook-f"></i> facebook.com/institutosouldance</span></li>
+          </ul>
       </div>
-</section>
-<!-- inicio de footer --> 
-    <footer class="fondofooter">
-    <img class="logo" src="../img/logo.svg" alt="">
-    <h3>CONTACTO WP (TELÉFONO)</h3>
-    <h3>LINK REDES (IG)(FB)(YT)</h3>
-    <p>Diseño y Programación. Todos los Derechos Reservados</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
-<body style="background-color:#F5D9ED;"></body>
+      <div class="form__input--container">
+          <input type="text" class="form__input" placeholder="Nombre y Apellido">
+          <input type="email" class="form__input" placeholder="name@example.com">
+          <textarea class="form__textarea" placeholder="Deja tu mensaje!" cols="30" rows="10"></textarea>
+          <button type="submit" class="form__button">Enviar</button>
+      </div>
+  </main>
+  <!-- inicio de footer --> 
+  <footer class="footer-container">
+      <ul class="footer__ul">
+        <li class="footer__li"><span><i class="fa-brands fa-instagram"></i></span></li>
+        <li class="footer__li"><span><i class="fa-brands fa-facebook-f"></i></span></li>
+        <li class="footer__li"><span><i class="fa-brands fa-youtube"></i></span></li>
+        <li class="footer__li"><span>Diseño y Programación. Todos los Derechos Reservados</span></li>
+      </ul>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://kit.fontawesome.com/c539e2d60d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -1,8 +1,12 @@
+/* ESTILO MAIN/SECTIONS */
+
+/* ESTILO INFO */
+
 .section-container--info {
     display: flex;
     gap: $xlarge;
     padding: $xlarge;
-    border-bottom: 1px solid #7b1f7a; 
+    border-bottom: 1px solid $main_color; 
     .section__info {
         flex: 1 1 50%;
         .info__h2 {
@@ -22,6 +26,29 @@
                         height: 400px; }  }   
 }                            
 
+
+
+
+/* ESTILO PLACE */
+
+.section-container--place {
+  display: flex;
+  gap: $xlarge;
+  padding: $large;
+
+  .section__figure-place {
+    flex: 1 1 50%;
+  
+    .place-figure__img {
+    width: 100%;
+     height: 400px;
+    }
+  
+  }
+}
+
+
+
 .section__place {
     flex: 1 1 50%; 
     .place__h2 {
@@ -35,20 +62,49 @@
     font-family: $main_font; }  
 }
 
+/* ESTILO CARDS */
+
 .boostrap-style {
-    padding: $xlarge; }
+    padding: $xlarge; 
+     
+ .card-body {
+      height: 300px;
+      background-color: #ead6ea;
+      box-shadow: 0 0 5px #000;
+       
+
+      .card-title {
+        text-align: center;
+        font-size: $title_font-size;
+        padding: $xsmall;
+        font-family: $main_font;
+        border-bottom: 1px solid #7b1f7a;}
+      .card-text {
+        text-align: justify;
+        font-size: $text_font-size;
+        font-family: $main_font;
+        margin-top: $xsmall;}
+
+    }
+ }
   
+
+
 /* ESTILO MAP */
   .section-container--map {
     width: 100%;
     margin: $xlarge 0;
-    padding: $xlarge; }
+    padding: $xlarge; 
+     
+    .map__title {
+      font-size: $title_font-size;
+      font-family: $main_font;
+      text-align: center; }
+    .map__text {
+      font-size: $text_font-size;
+      font-family: $main_font; }
   
-  .map__title {
-    font-size: $title_font-size;
-    font-family: $main_font;
-    text-align: center; }
+  }
   
-  .map__text {
-    font-size: $text_font-size;
-    font-family: $main_font; }
+  
+  

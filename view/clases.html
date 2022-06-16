@@ -4,89 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo" type="image/x-icon">
     <title>Soul Dance | Instituto de Danzas</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilosCss.css">
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Joan&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body class="fondobody">
-    <!-- Logo + Nombre + nav -->
-    <header>
-        <img class="logo" src="../img/logo.svg" alt="">
-        <!-- <h1>Soul Dance | Instituto de Danzas</h1> -->
-       <nav>
-           <ul>
-               <li class="sinpunto">
-                   <a href="../index.html">HOME</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./instituto.html">INSTITUTO</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./clases.html">CLASES</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./imagenes.html">IMAGENES</a>
-               </li>
-               <li class="sinpunto">
-                   <a href="./contacto.html">CONTACTO</a>
-               </li>
-           </ul>
-       </nav>
+<body>
+    <!-- HEADER -NAV -->
+    <header class="header-container">
+      <figure class="header__figure">
+        <img class="figure__logo" src="./img/logo.png" alt="logo">
+      </figure>
+    <!-- <h1>Soul Dance | Instituto de Danzas</h1 ATENCION! LINKEAR EL LOGO A MI PAG -->
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li class="nav__li"><a href="../index.html">HOME</a></li>
+          <li class="nav__li"><a href="./instituto.html">INSTITUTO</a></li>
+          <li class="nav__li"><a href="./clases.html">CLASES</a></li>
+          <li class="nav__li"><a href="./imagenes.html">IMAGENES</a></li>
+          <li class="nav__li"><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
     </header>
-    <!-- cierre de mi menu -->
-	<!-- comienza información de mi sitio -->
-
-    <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-4">
-            <img src="../img/clases1.jpeg" alt="">
-            <h2><ins>DANZA CLASICA</ins></h2>
-            <ul>
-                <li>Clasico babys/</li>
-                <li>Clasico Avanzado/</li>
-                <li>Clasico Juv 1/</li>
-                <li>Clasico Juv 2/</li>
-            </ul>
-            <p><em>Los niños desarrollan, estimulan, y educan su oído musical, trabajan elongación, ritmos, respiración y comienzan a desarrollar los primeros conocimientos de la técnica clásica
-
-            </em></p>
-            </p>
+      <!-- cierre de mi menu -->
+      <!-- comienza información de mi sitio -->
+          <!-- Example row of columns -->
+        <div class="card-group">
+          <div class="card h-100" style="width: 18rem;">
+            <img src="../img/clases1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">DANZA CLASICA</h5>
+              <p class="card-text">Los niños desarrollan, estimulan, y educan su oído musical, trabajan elongación, ritmos, respiración y comienzan a desarrollar los primeros conocimientos de la técnica clásica</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Clasico Babys</li>
+                <li class="list-group-item">Clasico Avanzado</li>
+                <li class="list-group-item">Clasico Juv 1 y Juv 2</li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md-4">
-              <img src="../img/clases2.jpeg" alt="">
-            <h2><ins>DANZA JAZZ</ins></h2>
-            <ul>
-                <li>Jazz babys/</li>
-                <li>Jazz Infantil/</li>
-                <li>Jazz Contemporaneo/</li>
-                <li>Jazz Juv 1/</li>
-            </ul>
-            <p><em> Empezaremos a conocer el movimiento y su relación con el entorno de manera lúdica, buscando aprender y divertirnos a la vez!</em> </p>
-            </p>
-         </div>
-          <div class="col-md-4">
-            <img src="../img/clases3.jpeg" alt="">
-            <h2><ins>OTROS</h2>
-                <ul>
-                    <li>Ritmos Urbanos</li>
-                    <li>Zumba/</li>
-                </ul>
-            <p><em>Los alumnos, desarrollan la clase básica completa, utilizan elementos que contribuyen a ejercitar la elongación, trabajan ritmos y estilos</em></p>
-            </p>
+          <div class="card h-100" style="width: 18rem;">
+            <img src="../img/clases2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">DANZA JAZZ</h5>
+              <p class="card-text">Empezaremos a conocer el movimiento y su relación con el entorno de manera lúdica, buscando aprender y divertirnos a la vez!</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Jazz Babys</li>
+                <li class="list-group-item">Jazz Infantil y Juv 1</li>
+                <li class="list-group-item">Jazz Contemporaneo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card h-100" style="width: 18rem;">
+            <img src="../img/clases3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">OTROS</h5>
+              <p class="card-text">Los alumnos, desarrollan la clase básica completa, utilizan elementos que contribuyen a ejercitar la elongación, trabajan ritmos y estilos</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Ritmos Urbanos</li>
+                <li class="list-group-item">Zumba</li>
+              </ul>
+            </div>
           </div>
         </div>
-
-    <!-- inicio de footer --> 
-    <footer class="fondofooter">
-        <img class="logo" src="../img/logo.svg" alt="">
-        <h3>CONTACTO WP (TELÉFONO)</h3>
-        <h3>LINK REDES (IG)(FB)(YT)</h3>
-        <p>Diseño y Programación. Todos los Derechos Reservados</p>
+      <!-- inicio de footer --> 
+      <footer class="footer-container">
+        <ul class="footer__ul">
+          <li class="footer__li"><span><i class="fa-brands fa-instagram"></i></span></li>
+          <li class="footer__li"><span><i class="fa-brands fa-facebook-f"></i></span></li>
+          <li class="footer__li"><span><i class="fa-brands fa-youtube"></i></span></li>
+          <li class="footer__li"><span>Diseño y Programación. Todos los Derechos Reservados</span></li>
+        </ul>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/c539e2d60d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
-<body style="background-color:#F5D9ED;"></body>
-</html>
+  </body>
+  </html>
