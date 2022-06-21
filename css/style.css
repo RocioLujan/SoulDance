@@ -292,7 +292,7 @@ body {
 
 .card-img-top {
   height: 500px;
-  width: 100%;
+ 
   object-fit: cover;
 }
 
@@ -510,4 +510,8 @@ body {
   font-family: var(--secondary_font);
   list-style: none;
   color: var(--secondary_color);
+}
+
+.ig-logo{
+  color: white;
 }
