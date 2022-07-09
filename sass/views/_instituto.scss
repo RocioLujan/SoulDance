@@ -7,33 +7,37 @@
     gap: $xlarge;
     padding: $large;
     border-bottom: 1px solid $main_color;
+    align-items: center;
      
-    .section__figure-coach {
+    & .section__figure-coach {
         flex: 1 1 50%;
         padding: $large;
         text-align: center;
-        .coach-figure__img {
+
+        & .coach-figure__img {
             width: 100%;
-            height: 250px;
             border-radius: $xsmall;
-          }
         }
-}
+      }
 
 .section__coach {
     flex: 1 1 60%;
   
-    .coach__h2 {
+    & .coach__h2 {
         text-align: center;
         font-size: $title_font-size;
         padding: $xsmall;
         font-family: $main_font;
+        text-transform: uppercase;
+        font-weight: 600;
       }
-    .coach__p {
+
+    & .coach__p {
         text-align: justify;
         font-size: $text_font-size;
         font-family: $main_font;
     }
+}
 }
 
 
@@ -43,7 +47,7 @@
 .section-container--hist {
     padding: $large;
   
-    .hist__h1 {
+    & .hist__h1 {
         text-align: center;
         font-family: $main_font;
         text-decoration: underline;
@@ -51,7 +55,6 @@
         font-size: $title_font-size;
       } 
 }
-
 
 /* ESTILO CAROUSEL */
 
@@ -61,7 +64,7 @@
     margin: auto;
     padding: $large;
      
-    .carousel__h2 {
+    & .carousel__h2 {
         text-align: center;
         font-family: $main_font;
         text-decoration: underline;
@@ -69,8 +72,17 @@
         font-size: $title_font-size;
         margin: $medium;
       }
-      .carousel-item img {
-        object-fit: cover;
+
+      & .carousel-item img {
+        max-height: 500px;
+        object-fit: contain;
         width: 100%;
+      }
+}
+
+@media screen and (max-width:700px) {
+  .section-container--coach{ 
+      display: flex;
+      flex-direction: column;
       }
 }

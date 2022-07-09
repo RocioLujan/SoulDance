@@ -1,21 +1,53 @@
 /* ESTILO CLASES */
 
-.card-group {
-    margin: $medium 0;
-    gap: $medium;
-  }
-.card-img-top {
-    height: 500px;
-    width: 100%;
-    object-fit: cover;
-    .list-group {
-        bottom: 0;
-        font-family: $secondary_font;
-        font-size: $text_font-size;
-        text-align: center;
-        .list-group-item {
-            background-color: transparent!important;
-          }
+.clases-main{
+  margin: $xlarge;
+  & .card-group {
+      margin: $medium 0;
+      display: flex;
+      column-gap: $medium;
+      & .card {
+        max-height: 900px;
+        & .card-img-top {
+            max-height: 500px;
+            width: 100%;
+            object-fit: fill;
+            border: 1px solid #000;
+        }
+
+        & .card-body {
+            & .card-title {
+              font-family: $secondary_font;
+              font-size: $title_font-size;
+              text-align: center;
+          }            
           
+          & .card-text {
+            font-family: $secondary_font;
+            font-size: $text_font-size;
+            text-align: justify;
+          }
+
+            & .list-group {
+                bottom: 0;
+                font-family: $secondary_font;
+                font-size: $text_font-size;
+                text-align: center;
+              & .list-group-item {
+                  background-color: transparent!important;
+                }       
+              }
+          }
+      }
     }
+  }
+
+        
+  @media screen and (max-width:480px) {
+    .clases-main{
+      & .card-group{
+        flex-flow: column wrap;
+      }
+    }
+    
   }

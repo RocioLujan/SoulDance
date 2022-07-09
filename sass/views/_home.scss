@@ -4,59 +4,73 @@
 
 .section-container--info {
     display: flex;
-    gap: $xlarge;
+    gap: 100px;
     padding: $xlarge;
     border-bottom: 1px solid $main_color; 
-    .section__info {
+    justify-content: center;
+    align-items: center;
+
+    & .section__info {
         flex: 1 1 50%;
-        .info__h2 {
-            text-align: center;
-            font-size: $title_font-size;
-            padding: $xsmall;
-            font-family: $main_font; } 
-        .info__p {
-                text-align: justify;
-                font-size: $text_font-size;
-                font-family: $main_font; } }   
-    .section__figure-info {
-                    flex: 1 1 50%;
-                    text-align: right; 
-        .info-figure__img {
-                        width: 80%;
-                        height: 400px; }  }   
+        max-width: 500px;
+
+      & .info__h2 {
+        text-align: center;
+        font-size: $title_font-size;
+        padding: $xsmall;
+        font-family: $main_font; } 
+
+      & .info__p {
+        text-align: justify;
+        font-size: $text_font-size;
+        font-family: $main_font; } }  
+
+    & .section__figure-info {
+      flex: 1 1 50%;
+      text-align: center; 
+      max-width: 500px;
+
+      & .info-figure__img {
+        width: 100%;
+        max-width: 500px;
+        height: 300px; }
+      }   
 }                            
-
-
-
 
 /* ESTILO PLACE */
 
 .section-container--place {
   display: flex;
-  gap: $xlarge;
+  gap: 100px;
   padding: $large;
+  justify-content: center;
+  align-items: center;
 
-  .section__figure-place {
+  & .section__figure-place {
     flex: 1 1 50%;
+    text-align: center;
+    max-width: 500px;
   
-    .place-figure__img {
+    & .place-figure__img {
     width: 100%;
-     height: 400px;
+    max-width: 500px;
+    height: 300px;
     }
-  
   }
 }
 
-
-
 .section__place {
     flex: 1 1 50%; 
-    .place__h2 {
+    max-width: 500px;
+    text-align: center;
+
+    & .place__h2 {
     text-align: center;
     font-size: $title_font-size;
     padding: $xsmall;
     font-family: $main_font; }
-    .place__p {
+
+    & .place__p {
     text-align: justify;
     font-size: $text_font-size;
     font-family: $main_font; }  
@@ -67,55 +81,55 @@
 .boostrap-style {
     padding: $xlarge; 
      
- .card-body {
-      height: 300px;
+ & .card-body {
+      max-height: 400px;
+      min-height: 300px;
       background-color: #ead6ea;
       box-shadow: 0 0 5px #000;
-       
-
-      .card-title {
+      
+      & .card-title {
         text-align: center;
         font-size: $title_font-size;
         padding: $xsmall;
         font-family: $main_font;
         border-bottom: 1px solid #7b1f7a;}
-      .card-text {
+
+      & .card-text {
         text-align: justify;
         font-size: $text_font-size;
         font-family: $main_font;
         margin-top: $xsmall;}
-
     }
  }
   
-
-
 /* ESTILO MAP */
+
   .section-container--map {
     width: 100%;
     margin: $xlarge 0;
     padding: $xlarge; 
      
-    .map__title {
+    & .map__title {
+      margin: $large 0;
       font-size: $title_font-size;
       font-family: $main_font;
       text-align: center; }
-    .map__text {
+
+    & .map__text {
+      text-align: center;
       font-size: $text_font-size;
       font-family: $main_font; }
-  
   }
-  
   
   //responsive//
 
-
-  @media screen and (max-width: 700px) {
-    .section-container--coach{ 
+  @media screen and (max-width:480px) {
+    .section-container--info{ 
         display: flex;
         flex-direction: column;
-
         }
-      
-    
+    .section-container--place{
+        display: flex;
+        flex-direction: column;
+        }
   }
