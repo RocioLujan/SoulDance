@@ -8,9 +8,8 @@
     <meta name="description" content="diferentes estilos y clases de danza">
     <meta name="keywords"  content="danza, profesores, clases, urbano, Contemporaneo">
     <title>Nuestras clases</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/estilosCss.css">
     <!-- CSS only -->
+    <link rel="stylesheet" href="../css/estilosCss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Joan&display=swap" rel="stylesheet">
@@ -20,15 +19,17 @@
     <!-- HEADER -NAV -->
     <header class="header-container">
       <figure class="header__figure">
-        <img class="figure__logo" src="./img/logo.png" alt="logo">
+        <img class="figure__logo" src="../img/logo.png" alt="logo">
       </figure>
     <!-- <h1>Soul Dance | Instituto de Danzas</h1 ATENCION! LINKEAR EL LOGO A MI PAG -->
       <nav class="nav">
+        <input type="checkbox" class=“nav__button” id="nav__button">
+        <label for="nav__button" class="nav__label"><i class="fa fa-bars"></i></label> 
         <ul class="nav__ul">
           <li class="nav__li"><a href="../index.html">HOME</a></li>
           <li class="nav__li"><a href="./instituto.html">INSTITUTO</a></li>
           <li class="nav__li"><a href="./clases.html">CLASES</a></li>
-          <li class="nav__li"><a href="./imagenes.html">IMAGENES</a></li>
+          <li class="nav__li"><a href="./galeria.html">GALERIA</a></li>
           <li class="nav__li"><a href="./contacto.html">CONTACTO</a></li>
         </ul>
       </nav>
@@ -36,9 +37,10 @@
       <!-- cierre de mi menu -->
       <!-- comienza información de mi sitio -->
           <!-- Example row of columns -->
+    <main class="clases-main">
         <div class="card-group">
-          <div class="card h-100" style="width: 18rem;">
-            <img src="../img/clases1.jpeg" class="card-img-top" alt="...">
+          <div class="card">
+            <img src="../img/clases1.jpeg" class="card-img-top" alt="danza clasica">
             <div class="card-body">
               <h5 class="card-title">DANZA CLASICA</h5>
               <p class="card-text">Los niños desarrollan, estimulan, y educan su oído musical, trabajan elongación, ritmos, respiración y comienzan a desarrollar los primeros conocimientos de la técnica clásica</p>
@@ -49,8 +51,8 @@
               </ul>
             </div>
           </div>
-          <div class="card h-100" style="width: 18rem;">
-            <img src="../img/clases2.jpeg" class="card-img-top" alt="...">
+          <div class="card">
+            <img src="../img/clases2.jpeg" class="card-img-top" alt="danza jazz">
             <div class="card-body">
               <h5 class="card-title">DANZA JAZZ</h5>
               <p class="card-text">Empezaremos a conocer el movimiento y su relación con el entorno de manera lúdica, buscando aprender y divertirnos a la vez!</p>
@@ -61,8 +63,8 @@
               </ul>
             </div>
           </div>
-          <div class="card h-100" style="width: 18rem;">
-            <img src="../img/clases3.jpeg" class="card-img-top" alt="...">
+          <div class="card">
+            <img src="../img/clases3.jpeg" class="card-img-top" alt="danza urbana">
             <div class="card-body">
               <h5 class="card-title">OTROS</h5>
               <p class="card-text">Los alumnos, desarrollan la clase básica completa, utilizan elementos que contribuyen a ejercitar la elongación, trabajan ritmos y estilos</p>
@@ -73,6 +75,7 @@
             </div>
           </div>
         </div>
+    </main>
       <!-- inicio de footer --> 
       <footer class="footer-container">
         <ul class="footer__ul">
